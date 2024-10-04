@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>Calculadora aritmetica</h1>
+<p>Ingresa datos numericos ..</p>
+<form action="/" method="POST">
+
+    <div class="row">
+        <div class="col-md-6">
+            <input type="number" class="form-control" name="md" placeholder="Ingresa la medida en metros" aria-label="Ingresa  la medida en metros">
+        </div>
+    </div>
+    <div class="row py-3">
+        <div class="col-md-12">
+            <button type="submit" class="btn btn-primary aling-center">Calcular</button>
+        </div>
+    </div>
+</form>
+
+<div class="row py-2">
+    <div class="col">
+        <h3>La convercion en kilometros es:la convercion en kilometros es {{total_kilometro}}</h3>
+        <h3>La convercion en centrimetros es: {{total_centimetros}}</h3>
+        <h3>La convercion en milimetros es: {{total_milimetros}}</h3>
+        <h3>La convercion en decimetros es: {{total_decimetros}}</h3>
+    </div>
+</div>
+{% endblock %}
